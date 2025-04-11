@@ -16,7 +16,7 @@ function App() {
   React.useEffect(() => {
     requestPermission();
   }, []);
-
+  ///
   const codeScanner = useCodeScanner({
     codeTypes: ['qr', 'ean-13'],
     onCodeScanned: (codes: Code[]) => {
